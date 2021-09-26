@@ -7,3 +7,6 @@ function grizkIKetvirta (){
 function grizkIPagrindini (){
     window.location.href="index.html"
 }
+function myFunction(){
+    document.getElementById("panel").style.display = "contents";
+}

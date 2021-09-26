@@ -9,7 +9,7 @@ body {
     font-size: 25px; 
     font-weight: bold;
     }
-
+   
     
     @-webkit-keyframes blackWhite {  
       0% { background-color: rgb(243, 88, 88); }
@@ -52,7 +52,6 @@ body {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    border-radius: 12px;
   }
   
   .pirmas a {
@@ -134,11 +133,13 @@ body {
   
   .Kaireje, .Desineje {
     width: 20%;
-   }
+    padding-left: 40px;
+     }
   
    .Centre {
     width: 60%;
   }
+
   
   /* Clear floats after the columns */
   .pagrindas:after {
@@ -157,3 +158,20 @@ body {
   @keyframes blinker {
     50% {opacity: 0;}
   } 
+  .Desineje:hover{
+    width: 300px;
+    height: 300px;
+    writing-mode: horizontal-tb;
+  }
+  #panel, .flip {
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+ 
+  }
+  
+  #panel {
+    display: none;
+
+  
