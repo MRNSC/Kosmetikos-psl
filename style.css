@@ -3,8 +3,11 @@
     box-sizing: border-box;
 }
 body {
-    font-family: 'Open Sans', sans-serif;
-    background-image: url(Nuotraukos/grass.jpg) ;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url(Nuotraukos/grass.jpg);  
+    background-size: cover;
+    font-size: 25px; 
+    font-weight: bold;
     }
 
     
@@ -12,12 +15,13 @@ body {
       0% { background-color: rgb(243, 88, 88); }
       50% { background-color: rgb(233, 229, 23); }
       75% { background-color: rgb(160, 37, 37); }
-      100% { background-color: rgb(16, 78, 10); }
+      100% { background-color: rgb(241, 16, 8); }
     }
     
     .antraste {
         height: 100px;
-        padding: 30px;       background-color: rgb(172, 38, 38);
+        padding: 10px;       
+        background-color: rgb(172, 38, 38);
         -webkit-animation-name: blackWhite;  
         -webkit-animation-iteration-count: infinite;  
         -webkit-animation-duration: 5s; 
@@ -26,20 +30,21 @@ body {
 
 .juosta {
     padding: 20px;
-}
+   }
 .isskleidimas {
-    background-color: #4c74af;
+    background-color: #991a93;
     color: white;
-    font-size: 16px;
+    font-size: 32px;
     border: none;
     cursor: pointer;
+    padding: 10px;
   }
   
   .juosta {
     position: relative;
     display: inline-block;
   }
-  
+ 
   .pirmas {
     display: none;
     position: absolute;
@@ -47,6 +52,7 @@ body {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    border-radius: 12px;
   }
   
   .pirmas a {
@@ -69,30 +75,50 @@ body {
   .antras{
     background-color: #4c74af;
     color: white;
-    font-size: 16px;
+    font-size: 32px;
     border: none;
     cursor: pointer;
+    border-radius: 12px;
+    padding: 10px;
+  }
+  .antras:hover {
+    background-color:rgb(224, 31, 31) ;
   }
   .trecias{
     background-color: #4c74af;
     color: white;
-    font-size: 16px;
+    font-size: 32px;
     border: none;
     cursor: pointer;
+    border-radius: 12px;
+    padding: 10px;
+  }
+  .trecias:hover {
+    background-color:rgb(224, 31, 31) ;
   }
   .ketvirtas{
     background-color: #4c74af;
     color: white;
-    font-size: 16px;
+    font-size: 32px;
     border: none;
     cursor: pointer;
+    border-radius: 12px;
+    padding: 10px;
+  }
+  .ketvirtas:hover {
+    background-color:rgb(224, 31, 31) ;
   }
   .penktas{
     background-color: #4c74af;
     color: white;
-    font-size: 16px;
+    font-size: 32px;
     border: none;
-    cursor: pointer;   
+    cursor: pointer;
+    border-radius: 12px; 
+    padding: 10px;
+    }
+    .penktas:hover {
+      background-color:rgb(224, 31, 31) ;
     }
 
   .centras{
@@ -110,7 +136,7 @@ body {
     width: 20%;
    }
   
-  .Centre {
+   .Centre {
     width: 60%;
   }
   
@@ -120,4 +146,14 @@ body {
     display: table;
     clear: both;
   }
-   
+  .Desineje{
+    animation: blinker 1s linear infinite;
+    color: rgb(77, 1, 1);
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-align: center;
+    padding-left: 50px;
+    }
+  @keyframes blinker {
+    50% {opacity: 0;}
+  } 
