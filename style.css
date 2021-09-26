@@ -159,10 +159,11 @@ body {
     50% {opacity: 0;}
   } 
   .Desineje:hover{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     writing-mode: horizontal-tb;
   }
+
   #panel, .flip {
     font-size: 16px;
     padding: 10px;
@@ -173,5 +174,5 @@ body {
   
   #panel {
     display: none;
-
+  }
   
